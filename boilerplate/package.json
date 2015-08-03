@@ -15,6 +15,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "install": "tsd install",
     "start": "tsc; electron .",
     "build": "tsc; electron-packager . $npm_package_productName --out=dist --ignore=dist --prune --asar --all --version=0.30.0"
   },

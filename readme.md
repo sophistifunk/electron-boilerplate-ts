@@ -8,9 +8,16 @@
 
 ## Getting started
 
-`git clone` this repo and get contents of the `boilerplate` folder.
+`git clone` this repo, then run:
 
-**TODO-JM: Better damned documentation for this mutant version**
+	cd boilerplate
+	npm install
+	npm start
+
+**TODO:**
+
+ * Better damned documentation for this mutant version
+ * Build a couple of base classes for apps, package up some of the more useful electron magic into TS helper classes
 
 ## License
 
