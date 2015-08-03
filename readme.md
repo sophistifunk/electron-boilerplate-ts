@@ -1,22 +1,17 @@
-# electron-boilerplate
+# electron-boilerplate-ts
 
-> Boilerplate to kickstart creating an app with [Electron](https://github.com/atom/electron) *(formerly atom-shell)*
+> Boilerplate to kickstart creating an app with [Electron](https://github.com/atom/electron) *(formerly atom-shell)* - updated to TypeScript
 
 *See [awesome-electron](https://github.com/sindresorhus/awesome-electron) for more useful Electron resources.*
 
+**Warning:** This is a work-in-progress. It works, but it's not exactly idiomatic TypeScript yet. But it builds :)
 
 ## Getting started
 
-In your directory, run:
+`git clone` this repo and get contents of the `boilerplate` folder.
 
-```
-$ curl -fsSL https://github.com/sindresorhus/electron-boilerplate/archive/master.tar.gz | tar -xz --strip-components 2
-```
-
-You can also `git clone` or [download](https://github.com/sindresorhus/electron-boilerplate/archive/master.zip) this repo and get contents of the `boilerplate` folder.
-
-There's also a [Yeoman generator](https://github.com/sindresorhus/generator-electron).
+**TODO-JM: Better damned documentation for this mutant version**
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com) with (minor) contributions from [Josh McDonald](https://github.com/sophistifunk)

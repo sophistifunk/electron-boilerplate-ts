@@ -12,37 +12,35 @@ require('electron-debug')();
 
 var mainWindow:GitHubElectron.BrowserWindow;
 
-function createMainWindow () {
-	const win = new BrowserWindow({
-		width: 600,
-		height: 400,
-		resizable: false
-	});
+function createMainWindow() {
+    const win = new BrowserWindow({
+        width: 600,
+        height: 400,
+        resizable: false
+    });
 
-	win.loadUrl(`file://${__dirname}/index.html`);
-	win.on('closed', onClosed);
+    win.loadUrl(`file://${__dirname}/index.html`);
+    win.on('closed', onClosed);
 
-	return win;
+    return win;
 }
 
 function onClosed() {
-	// deref the window
-	// for multiple windows store them in an array
-	mainWindow = null;
+    // deref the window
+    // for multiple windows store them in an array
+    mainWindow = null;
 }
 
 app.on('window-all-closed', function () {
-	if (process.platform !== 'darwin') {
-		app.quit();
-	}
+    app.quit();
 });
 
 app.on('activate-with-no-open-windows', function () {
-	if (!mainWindow) {
-		mainWindow = createMainWindow();
-	}
+    if (!mainWindow) {
+        mainWindow = createMainWindow();
+    }
 });
 
 app.on('ready', function () {
-	mainWindow = createMainWindow();
+    mainWindow = createMainWindow();
 });

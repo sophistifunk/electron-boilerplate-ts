@@ -15,8 +15,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "electron .",
-    "build": "electron-packager . $npm_package_productName --out=dist --ignore=dist --prune --asar --all --version=0.30.0"
+    "start": "tsc; electron .",
+    "build": "tsc; electron-packager . $npm_package_productName --out=dist --ignore=dist --prune --asar --all --version=0.30.0"
   },
   "files": [
     "index.js",
